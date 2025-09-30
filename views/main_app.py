@@ -102,7 +102,7 @@ def main_app():
 
         st.divider()
         st.header("⚙️ Configurações")
-        llm_provider = st.selectbox("Escolha o Provedor de LLM:", ["Ollama", "Gemini"])
+        llm_provider = st.selectbox("Escolha o Provedor de LLM:", ["Ollama", "Gemini"], index=1)
         selected_model = None
         if llm_provider == "Ollama":
             if ollama_models:
