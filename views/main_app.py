@@ -112,7 +112,7 @@ def main_app():
         elif llm_provider == "Gemini":
             if gemini_models:
                 filtered_gemini_models = [m for m in gemini_models if 'gemini' in m]
-                default_model = 'models/gemini-1.5-flash-latest'
+                default_model = 'models/gemini-2.5-flash'
                 default_index = filtered_gemini_models.index(default_model) if default_model in filtered_gemini_models else 0
                 selected_model = st.selectbox("Escolha o Modelo Gemini:", filtered_gemini_models, index=default_index)
             else:
