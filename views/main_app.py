@@ -257,4 +257,6 @@ def main_app():
             <li>O relatório é montado na barra lateral à esquerda.</li>
             <li>Você pode baixar o relatório completo em formato <strong>.docx</strong> usando o botão na barra lateral.</li>
         </ul>
+        <p><strong>Modo Desenvolvedor:</strong></p>
+        <p>Ative a opção "Mostrar pensamentos do agente" na barra lateral para entender como a IA está trabalhando!</p>
         """, unsafe_allow_html=True)
