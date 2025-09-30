@@ -245,9 +245,16 @@ def main_app():
         st.markdown("<h3 style='text-align: center;'>🚀 Comece sua Análise de Dados!</h3>", unsafe_allow_html=True)
         st.markdown("---")
         st.write("""
-        Para iniciar, por favor, siga estes passos:
-        1.  **Faça o Upload do seu CSV:** Use o botão "Faça upload do seu arquivo CSV" na barra lateral para carregar seus dados.
-        2.  **Escolha seu LLM:** Selecione o provedor (Ollama ou Gemini) e o modelo na barra lateral.
-        3.  **Faça Perguntas:** Após carregar o arquivo, use a caixa de chat abaixo para interagir com seus dados em linguagem natural.
-        """)
-        st.info("Dica: Ative o 'Mostrar pensamentos do agente' na barra lateral para entender como a IA está trabalhando!")
+        <p>Para iniciar, siga os passos na barra lateral:</p>
+        <ol>
+            <li><strong>Faça o upload do seu arquivo CSV.</strong></li>
+            <li>O modelo <strong>Gemini 1.5 Flash</strong> já está selecionado por padrão. Se quiser, você pode trocá-lo.</li>
+            <li>Use a caixa de chat abaixo para começar a fazer perguntas!</li>
+        </ol>
+        <p><strong>Dica de Relatório:</strong></p>
+        <ul>
+            <li>Clique no ícone 🧷 ao lado de uma resposta para adicioná-la ao seu relatório.</li>
+            <li>O relatório é montado na barra lateral à esquerda.</li>
+            <li>Você pode baixar o relatório completo em formato <strong>.docx</strong> usando o botão na barra lateral.</li>
+        </ul>
+        """, unsafe_allow_html=True)
