@@ -59,7 +59,27 @@ graph TD
 
 Este fluxograma detalha o processo de decisão dos agentes a cada pergunta, destacando a arquitetura híbrida.
 
-![Fluxo do Conselho Jedi](asset/fluxo_conselho_jedi.png)
+```mermaid
+graph TD
+    A[Usuário envia consulta] --> B{Master Agent};
+    B --> C{Verificação por Palavras-Chave};
+    C -- "gráfico", "plot", etc. --> D[Ferramenta: Visualizer];
+    C -- "coluna", "tipo", etc. --> E[Ferramenta: DataGuardian];
+    C -- Nenhuma palavra-chave --> F{LLM Classifica Intenção};
+    
+    D --> G[Artisan Agent: Gera Gráfico];
+    E --> H[Guardian Agent: Analisa Dados];
+    
+    F -- Intenção de Análise --> H;
+    F -- Intenção de Visualização --> G;
+    F -- Intenção de Conversa --> I[Resposta Direta];
+    
+    G --> J{Sage Agent};
+    H --> J;
+    
+    J -- Interpreta resultado --> K[Resposta Final ao Usuário];
+    I --> K;
+```
 
 *   **Interface Intuitiva com Streamlit:** Mantém a facilidade de uso com upload de CSV, seleção de modelos e uma interface de chat interativa.
 *   **Geração de Relatórios (`.docx`):** A funcionalidade de pinar descobertas e gerar um relatório foi mantida e aprimorada, agora compatível com os novos gráficos estáticos.
