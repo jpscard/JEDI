@@ -63,9 +63,9 @@ Este fluxograma detalha o processo de decisão dos agentes a cada pergunta, dest
 graph TD
     A[Usuário envia consulta] --> B{Master Agent};
     B --> C{Verificação por Palavras-Chave};
-    C -- "gráfico", "plot", etc. --> D[Ferramenta: Visualizer];
-    C -- "coluna", "tipo", etc. --> E[Ferramenta: DataGuardian];
-    C -- Nenhuma palavra-chave --> F{LLM Classifica Intenção};
+    C -- Visualizacao --> D[Ferramenta: Visualizer];
+    C -- Analise --> E[Ferramenta: DataGuardian];
+    C -- Outro --> F{LLM Classifica Intenção};
     
     D --> G[Artisan Agent: Gera Gráfico];
     E --> H[Guardian Agent: Analisa Dados];
