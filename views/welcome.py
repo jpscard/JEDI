@@ -4,6 +4,7 @@ import base64
 import os
 
 def welcome_screen():
+    st.set_page_config(page_title="Bem-vindo ao JEDI", layout="centered")
     """Exibe a tela de boas-vindas e instruções."""
     
     # Adiciona a logo centralizada

@@ -5,6 +5,7 @@ import base64
 from utils import validate_gemini_api_key
 
 def login_page():
+    st.set_page_config(page_title="Login - JEDI", layout="centered")
     """Exibe a página de login em um layout centralizado."""
     _, col, _ = st.columns([1, 2, 1])
     with col:

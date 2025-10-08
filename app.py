@@ -1,3 +1,6 @@
+import os
+os.environ['GRPC_VERBOSITY'] = 'ERROR'
+
 # --- Importações Essenciais ---
 import streamlit as st
 
@@ -6,12 +9,7 @@ from views.welcome import welcome_screen
 from views.login import login_page
 from views.main_app import main_app
 
-# --- CONFIGURAÇÃO DA PÁGINA (DEVE SER O PRIMEIRO COMANDO STREAMLIT) ---
-st.set_page_config(
-    page_title="Agente EDA com LangChain",
-    layout="wide",
-    initial_sidebar_state="auto"
-)
+
 
 # --- Bloco de Execução Principal (Roteador) ---
 
