@@ -59,7 +59,7 @@ graph TD
 
 Este fluxograma detalha o processo de decisão dos agentes a cada pergunta, destacando a arquitetura híbrida.
 
-![Fluxo do Conselho Jedi](Fluxograma dos agentes.png)
+![Fluxo do Conselho Jedi](JEDI/Fluxograma dos agentes.png)
 
 *   **Interface Intuitiva com Streamlit:** Mantém a facilidade de uso com upload de CSV, seleção de modelos e uma interface de chat interativa.
 *   **Geração de Relatórios (`.docx`):** A funcionalidade de pinar descobertas e gerar um relatório foi mantida e aprimorada, agora compatível com os novos gráficos estáticos.
